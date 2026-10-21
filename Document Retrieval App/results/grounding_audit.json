@@ -1,0 +1,79 @@
+{
+  "split": "test",
+  "documents": 100,
+  "text_match_threshold": 85.0,
+  "gold_verified_rate": {
+    "line_items.amount": {
+      "checked": 266,
+      "verified": 248,
+      "rate": 0.9323308270676691
+    },
+    "line_items.name": {
+      "checked": 287,
+      "verified": 266,
+      "rate": 0.926829268292683
+    },
+    "line_items.qty": {
+      "checked": 237,
+      "verified": 162,
+      "rate": 0.6835443037974683
+    },
+    "line_items.unit_price": {
+      "checked": 67,
+      "verified": 56,
+      "rate": 0.835820895522388
+    },
+    "subtotal": {
+      "checked": 65,
+      "verified": 64,
+      "rate": 0.9846153846153847
+    },
+    "tax": {
+      "checked": 41,
+      "verified": 36,
+      "rate": 0.8780487804878049
+    },
+    "total": {
+      "checked": 95,
+      "verified": 90,
+      "rate": 0.9473684210526315
+    }
+  },
+  "hallucination_detection_rate": {
+    "line_items.amount": {
+      "injected": 85,
+      "caught": 83,
+      "rate": 0.9764705882352941
+    },
+    "line_items.name": {
+      "injected": 100,
+      "caught": 100,
+      "rate": 1.0
+    },
+    "line_items.qty": {
+      "injected": 82,
+      "caught": 77,
+      "rate": 0.9390243902439024
+    },
+    "subtotal": {
+      "injected": 65,
+      "caught": 62,
+      "rate": 0.9538461538461539
+    },
+    "tax": {
+      "injected": 41,
+      "caught": 41,
+      "rate": 1.0
+    },
+    "total": {
+      "injected": 95,
+      "caught": 94,
+      "rate": 0.9894736842105263
+    }
+  },
+  "overall": {
+    "gold_verified_rate": 0.8714555765595463,
+    "false_rejection_rate": 0.1285444234404537,
+    "hallucination_detection_rate": 0.9764957264957265
+  }
+}

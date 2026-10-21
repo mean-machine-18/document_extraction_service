@@ -1,0 +1,16 @@
+# CPU-only: tests, mock-backend API, grounding audit, report generation
+fastapi==0.115.12
+uvicorn==0.34.2
+python-multipart==0.0.20
+pydantic==2.11.4
+pymupdf==1.25.5
+rapidocr-onnxruntime==1.4.4
+rapidfuzz==3.13.0
+python-dateutil==2.9.0.post0
+pillow==11.2.1
+numpy<2.1
+scipy>=1.11
+datasets==3.5.0
+tqdm>=4.66
+httpx==0.28.1
+pytest==8.3.5

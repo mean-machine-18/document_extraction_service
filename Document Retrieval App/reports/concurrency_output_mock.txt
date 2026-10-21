@@ -1,0 +1,18 @@
+server: {'status': 'ready', 'backend': 'mock'}  gate: {'running': 0, 'waiting': 0, 'max_queue': 3, 'completed': 0, 'avg_job_s': 10.0}
+sending 5 parallel requests with samples/cord_test_000.pdf (52 KB) at 2026-10-21 09:55:10
+
+req status client_s queue_s gpu_start  gpu_end  result
+  2    503     0.03       -         -        -  busy (Retry-After: 41)
+  4    200     3.05    0.01      0.02     3.05  total=None items=0
+  3    200     6.10    3.02      3.05     6.10  total=None items=0
+  1    200     9.15    6.07      6.10     9.15  total=None items=0
+  0    200    12.20    9.12      9.15    12.20  total=None items=0
+
+GPU timeline (each # = 0.20s)
+req 4: |##############                                              |
+req 3: |               ##############                               |
+req 1: |                             ###############                |
+req 0: |                                            ################|
+
+summary: 4 x 200, 1 x 503, 0 x 504, other: []
+GPU intervals overlap: False  ->  OK: one job at a time

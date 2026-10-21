@@ -1,0 +1,4 @@
+-r requirements.txt
+datasets==3.5.0
+tqdm>=4.66
+httpx==0.28.1
